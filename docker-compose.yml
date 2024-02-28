@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jwt-auth-service-db:
+    image: postgres
+    container_name: jwt-auth-service-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=jwt_auth_db
